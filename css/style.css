@@ -75,15 +75,16 @@ header{
     transform:rotate(-45deg);
 }
 nav{
-    display:table;
+    display:flex;
     position:absolute;
     width:100%;
     height:100%;
     opacity:0;
+    align-items: center;
     transition:all 0.3s;
 }
 nav ul{
-    display:table-cell;
+    width:100%;
     vertical-align:middle;
 }
 nav ul li{
@@ -94,7 +95,7 @@ nav ul li{
 nav ul li a{
     display:inline-block;
     font-family: 'Dosis',sans-serif;
-    font-size:25px;
+    font-size:1.563em;
     color:rgba(255,255,255,0.5);
     transition:all 0.5s;
     letter-spacing:5px;
@@ -102,7 +103,7 @@ nav ul li a{
 }
 nav ul li a.on, 
 nav ul li a:hover{
-    font-size:30px;
+    font-size:1.875em;
     color:#fff;
 }
 .nav_overlay{
@@ -141,46 +142,43 @@ footer{
     color:#fff;
     font-family:'Noto Sans KR', sans-serif;
     font-weight:400;
-    font-size:25px; 
+    font-size:1.563em; 
 }
 #home .content_row{
     margin-top:0;
     display:table;
+    min-height: calc(100vh - 60px);
 }
 #home .content_col{
     display:table-cell;
     vertical-align:middle;
     color:#fff;
 }
-.content_box#home p{font-size:25px;}
+.content_box#home p{font-size:1.563em;}
 /* home end */
 
 /* about */
 #about ul, .about_history{
-    clear:both;
-    overflow:hidden;
+    display: flex;
+    flex-direction: row;
 }
-.about_val{width:calc(50% - 10px);}
-#about ul li, .about_val{
-    position:relative;
-    float:left;
+.about_val{width:50%}
+#about ul.history_list{
+    flex-direction: column-reverse;
 }
-.history_list li{padding-left: 10px;}
-.history_list > li{margin-top:10px;}
-.history_list > li:nth-child(1){padding-top:0;}
-.history_list li:before{
-    content:'-';
-    position:absolute;
-    top:0;
-    left:0;
+#about ul.history_list > li{
+    margin:10px 0 0 20px;
+    width: 100%;
+    list-style-type: disc;
 }
-.history_list > li:before{
-    content:'·';
+#about ul.history_list ul{
+    margin-top:5px;
+    flex-direction: column;
 }
-.history_list > li span{padding-right:5px;}
+#about ul.history_list ul li{margin-left:5px;padding-left:10px; list-style-type: '-';}
 .skill_list li{
     padding:100px 10px 0;
-    width:calc(100%/3 - 20px);
+    width:calc(100%/3);
     text-align:center;
 }
 .skill_list li:nth-child(1){background:url('../img/icon/ico_skill01.png')no-repeat center 30px / 50px;}
@@ -189,7 +187,7 @@ footer{
 .skill_list li strong{
     padding-bottom:10px;
     display:block;
-    font-size:18px;
+    font-size:1.125em;
     text-transform:uppercase;
 }
 /* about end */
@@ -197,13 +195,14 @@ footer{
 /* work */
 .work_list{
     padding-top:30px;
-    clear:both;
-    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 .work_list li{
     margin:20px 0 0 20px;
-    float:left;
-    width:calc(100%/3 - 40px/3 - 0.5px);
+    width:calc(100%/3 - 14px);
     text-align:center;
 }
 .work_list li:nth-child(3n+1){margin-left:0;}
@@ -228,22 +227,23 @@ footer{
 
 .portfolio_tit{
     font-weight:500;
-    font-size:20px;
+    font-size:1.250em;
 }
 /* work end */
 
 /* contact */
 .contact_list{
     padding-top:30px;
-    clear:both;
-    overflow:hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
     text-align:center;
 }
 .contact_list li{
     padding:100px 10px 0;
-    float:left;
     width:calc(100%/3 - 20px);
-    font-size:18px;
+    font-size:1.125em;
 }
 .contact_list li:nth-child(1){background:url('../img/icon/ico_contact01.png')no-repeat center 30px / 50px;}
 .contact_list li:nth-child(2){background:url('../img/icon/ico_contact02.png')no-repeat center 30px / 50px;}
@@ -261,7 +261,7 @@ footer{
     display:block;
     width:100%;
     font-family: 'Dosis',sans-serif;
-    font-size:18px;
+    font-size:1.125em;
     background:none;
     border:0 none;
     border-bottom:1px solid rgba(255,255,225,0.45);
@@ -276,21 +276,23 @@ footer{
     margin-top:50px;
     padding:10px 20px;
     display:block;
-    font-size:18px;
+    font-size:1.125em;
     text-transform:uppercase;
 }
 /* contact end */
 
 /* 반응형 */
+@media screen and (max-width:1500px){
+    .work_list li{width: calc(50% - 14px); margin-left:20px !important;}
+    .work_list li:nth-child(odd){margin-left:0 !important;}
+
+}
 @media screen and (max-width:1240px){
     /* about */
-	#about ul li, .about_val{
-        float:none;
-        width:auto;
-    }
+	#about ul, .about_history{flex-direction: column;}
+    .about_val, #about ul.skill_list li{width: auto;}
     #about ul.skill_list li{
         padding:20px 0 0 70px;
-        width:auto;
         text-align:left;
         background-position:0 25px;
     }
@@ -353,7 +355,7 @@ footer{
 
 	/* home */
     .logo{top:5%;}
-	#home.content_box { height: 100%;}
+	#home.content_box { min-height: 100vh;}
 	/* home end */
 }
 
@@ -364,16 +366,6 @@ footer{
         top:20px;
         left:calc(100% - 80px);
     }
-	/* header end */
-}
-
-@media screen and (max-width:600px){ 
-	/* header */
-	nav ul li a{
-		font-size:15px;
-		line-height:1;
-	}
-	nav ul li a.on, nav ul li a:hover{font-size:20px;}
 	/* header end */
 }
 
@@ -393,9 +385,6 @@ footer{
     .nav_btn.open.on span.bottom{bottom:16px;}
 	/* header end */
 
-    .content_box#home p, .logo, footer, 
-    .portfolio_tit, .contact_list li strong{font-size:15px;}
-
 	/* work */
 	.work_list li{
 		margin-left:0 !important;
@@ -412,7 +401,6 @@ footer{
     .contact_list li{
         padding: 0 0 20px 70px;
         display:block;
-        float:none;
         width: auto;
         text-align: left;
         background-position: 0 0 !important;  
@@ -457,7 +445,6 @@ footer{
     .contact_list li{
         padding: 0 0 20px 70px;
         display:block;
-        float:none;
         width: auto;
         text-align: left;
         background-position: 0 0 !important;  
