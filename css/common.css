@@ -214,6 +214,7 @@ textarea::-moz-placeholder {
   /* content */
   .content_overlay {
     position: fixed;
+    width: 100%;
   }
   .content_scroll {
     overflow: hidden;
@@ -229,6 +230,7 @@ textarea::-moz-placeholder {
   .content_row {
     padding-top: 40px;
     margin: 0 5%;
+    width: 90%;
     overflow: inherit;
   }
   .content_col {
@@ -255,13 +257,8 @@ textarea::-moz-placeholder {
 }
 
 @media screen and (max-width: 600px) {
-  /* content */
-  .content_overlay {
-    width: 100%;
-  }
   .content_row {
     padding: 30px 0;
-    width: 90%;
   }
   /* content end */
 }
@@ -288,7 +285,7 @@ textarea::-moz-placeholder {
   /* content end */
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 767px) {
   /* button */
   .btn.round {
     margin-top: 30px;
