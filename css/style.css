@@ -129,7 +129,7 @@ nav ul li a:hover {
 /* footer */
 footer {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
@@ -143,20 +143,19 @@ footer {
   padding: 10px 0;
   display: block;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 0;
+}
+.logo a {
   color: #fff;
-  font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
   font-size: 1.563em;
   line-height: 1;
 }
 #home .content_row {
-  margin-top: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-height: calc(100vh - 60px);
 }
 #home .content_col {
   color: #fff;
@@ -393,11 +392,19 @@ footer {
   }
   .nav_btn {
     top: 20px;
-    left: calc(95% - 40px);
+    left: calc(100% - 80px);
+    width: 40px;
+    height: 40px;
+  }
+  .nav_btn.open span.top {
+    top: 10px;
+  }
+  .nav_btn.open span.bottom {
+    bottom: 10px;
   }
   header.on .nav_btn {
     top: 20px;
-    left: calc(50% - 30px);
+    left: calc(50% - 20px);
   }
   .nav_overlay {
     left: 0;
@@ -416,6 +423,12 @@ footer {
   .nav_btn.on + nav + .nav_overlay {
     width: 100%;
   }
+  .nav_btn.open.on span.top {
+    top: 19px;
+  }
+  .nav_btn.open.on span.bottom {
+    bottom: 19px;
+  }
   /* header end */
 
   /* footer */
@@ -427,9 +440,10 @@ footer {
   /* home */
   .logo {
     top: 20px;
+    padding: 0;
   }
-  #home.content_box {
-    min-height: 100vh;
+  #home .content_row {
+    height: 100vh;
   }
   /* home end */
 }
@@ -459,13 +473,6 @@ footer {
   }
   /* header end */
 
-  /* home */
-  .content_box h1 {
-    margin: 10px auto;
-    line-height: 1.2;
-  }
-  /* home end */
-
   /* work */
   .work_list li {
     margin-left: 0 !important;
@@ -489,36 +496,12 @@ footer {
 }
 
 @media screen and (max-height: 500px) {
-  /* header */
-  .nav_btn.open {
-    top: 20px;
-    left: calc(100% - 60px);
-    width: 40px;
-    height: 40px;
-  }
-  .nav_btn.open span.top {
-    top: 10px;
-  }
-  .nav_btn.open span.bottom {
-    bottom: 10px;
-  }
-  header.on .nav_btn {
-    left: calc(50% - 20px);
-  }
-  .nav_btn.open.on span.top {
-    top: 19px;
-  }
-  .nav_btn.open.on span.bottom {
-    bottom: 19px;
-  }
-  /* header end */
-
   .content_box#home p,
-  .logo,
+  .logo a,
   footer,
   .portfolio_tit,
   .contact_list li strong {
-    font-size: 15px;
+    font-size: 0.933em;
   }
 
   /* home */

@@ -121,11 +121,15 @@ textarea::-moz-placeholder {
   z-index: 1;
 }
 .content_row {
-  margin: 40px 5% 0;
+  margin: 40px;
+  padding: 0 10px;
   position: relative;
   overflow: hidden;
-  width: 60%;
-  min-height: 100%;
+  width: calc(70% - 100px);
+  height: calc(100% - 80px);
+}
+.content_box.view .content_row {
+  overflow: auto;
 }
 .content_col {
   padding-bottom: 50px;
@@ -223,9 +227,13 @@ textarea::-moz-placeholder {
   }
   .content_row {
     padding-top: 40px;
-    margin: 0 5%;
+    margin: 0 5% 80px;
+    padding: 0;
     width: 90%;
     overflow: inherit;
+  }
+  .content_box:not(#home) .content_row {
+    padding-top: 40px;
   }
   .content_col {
     height: auto;
