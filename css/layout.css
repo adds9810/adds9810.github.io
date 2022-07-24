@@ -226,14 +226,13 @@ textarea::-moz-placeholder {
     transform: translateX(0);
   }
   .content_row {
-    padding-top: 40px;
-    margin: 0 5% 80px;
+    margin: 0 5% 40px;
     padding: 0;
     width: 90%;
     overflow: inherit;
   }
   .content_box:not(#home) .content_row {
-    padding-top: 40px;
+    padding-top: 80px;
   }
   .content_col {
     height: auto;
