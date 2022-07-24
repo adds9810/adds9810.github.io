@@ -133,7 +133,7 @@ footer {
   left: 0;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #fff;
 }
 /* footer end */
@@ -161,8 +161,9 @@ footer {
   color: #fff;
 }
 #home.content_box h2 {
-  margin: 20px auto;
-  font-size: 3.75em;
+  margin: 0;
+  padding-top: 0;
+  font-size: 5em;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -296,7 +297,7 @@ footer {
 .contact_list li strong {
   margin-bottom: 10px;
   display: block;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .contact_list li a {
   color: #fff;
@@ -502,14 +503,6 @@ footer {
 }
 
 @media screen and (max-height: 500px) {
-  .content_box#home p,
-  .logo a,
-  footer,
-  .portfolio_tit,
-  .contact_list li strong {
-    font-size: 0.933em;
-  }
-
   /* home */
   #home .content_col {
     vertical-align: top;
