@@ -18,6 +18,7 @@ var pageName = window.location.hash;
 var count = void 0;
 var prevNum = void 0;
 var nextNum = void 0;
+var wheelTimer = void 0;
 
 function init() {
   create();
@@ -277,16 +278,17 @@ function navBtnFun() {
 }
 
 function webScroll(e) {
-  e.preventDefault();
-  var viewSec = document.querySelector(".content_box.view .content_row");
-
-  if (
-    e.deltaY > 0 &&
-    Math.ceil(viewSec.scrollTop + viewSec.clientHeight) >=
-      document.querySelector(".content_box.view .content_col").clientHeight
-  ) {
-    navBtnFun();
-  }
+  clearTimeout(wheelTimer);
+  wheelTimer = setTimeout(function () {
+    var viewSec = document.querySelector(".content_box.view .content_row");
+    if (
+      e.deltaY > 0 &&
+      Math.ceil(viewSec.scrollTop + viewSec.clientHeight) >=
+        document.querySelector(".content_box.view .content_col").clientHeight
+    ) {
+      navBtnFun();
+    }
+  }, 50);
 }
 
 function mobileScroll() {
