@@ -265,6 +265,7 @@ textarea::-moz-placeholder {
   }
   .content_background div {
     width: 100%;
+    height: auto;
     z-index: 0;
     opacity: 0;
     transition: all 0.5s ease;

@@ -1,5 +1,25 @@
 [
   {
+    "url": "https://www.hdksoe-sd.com/ko/main",
+    "linkTarget": "_blank",
+    "linkTit": "한국조선해양 SD사업부 사이트 새창 열기",
+    "imgSrc": "portfolio21.jpg",
+    "imgAlt": "한국조선해양 SD사업부",
+    "tit": "한국조선해양 SD사업부 리뉴얼 사이트",
+    "date": "2023. 11. ~ 2024. 1",
+    "lang": "HTML, SCSS, JS, JQUERY"
+  },
+  {
+    "url": "https://www.clalen.com/",
+    "linkTarget": "_blank",
+    "linkTit": "신협중앙회 라이프 ON 앱 새창 열기",
+    "imgSrc": "portfolio20.jpg",
+    "imgAlt": "신협중앙회 라이프 ON 앱 이미지",
+    "tit": "신협중앙회 라이프 ON 앱",
+    "date": "2023. 4. ~ 10.",
+    "lang": "HTML, SCSS, JAVASCRIPT, VUE.JS, VUETIFY"
+  },
+  {
     "url": "https://www.clalen.com/",
     "linkTarget": "_blank",
     "linkTit": "클라렌 사이트 새창 열기",
@@ -10,8 +30,8 @@
     "lang": "HTML, SCSS, JAVASCRIPT, VUE.JS"
   },
   {
-    "url": "http://toto7971.dothome.co.kr/cescoPromotion/",
-    "linkTarget": "_blank",
+    "url": "javascript:alert('현재 종료된 페이지 입니다.');",
+    "linkTarget": "",
     "linkTit": "세스코 반응형 게임 프로모션 새창 열기",
     "imgSrc": "portfolio17.jpg",
     "imgAlt": "세스코 게임 프로모션 이미지",
@@ -30,8 +50,8 @@
     "lang": "HTML, CSS, JAVASCRIPT, JQUERY"
   },
   {
-    "url": "http://toto7971.dothome.co.kr/bibigo/",
-    "linkTarget": "_blank",
+    "url": "javascript:alert('현재 종료된 페이지 입니다.');",
+    "linkTarget": "",
     "linkTit": "비비고 반응형 프로모션 사이트 새창 열기",
     "imgSrc": "portfolio18.jpg",
     "imgAlt": "비비고 프로모션 모바일 이미지",
@@ -40,8 +60,8 @@
     "lang": "HTML, CSS, JAVASCRIPT, JQUERY"
   },
   {
-    "url": "http://toto7971.dothome.co.kr/hy/",
-    "linkTarget": "_blank",
+    "url": "javascript:alert('현재 종료된 페이지 입니다.');",
+    "linkTarget": "",
     "linkTit": "HY 프로모션 사이트 새창 열기",
     "imgSrc": "portfolio19.jpg",
     "imgAlt": "HY 프로모션 사이트 모바일 이미지",
@@ -137,16 +157,6 @@
     "imgAlt": "위드인 웹, 모바일 이미지",
     "tit": "위드인 반응형 기업 사이트",
     "date": "2017. 11.",
-    "lang": "HTML, CSS, WORDPRESS"
-  },
-  {
-    "url": "http://tapkorea.kr",
-    "linkTarget": "_blank",
-    "linkTit": "탭코리아 사이트 새창 열기",
-    "imgSrc": "portfolio12.jpg",
-    "imgAlt": "탭코리아 반응형 이미지",
-    "tit": "탭코리아 반응형 기업 사이트",
-    "date": "2017. 5. ~ 6.",
     "lang": "HTML, CSS, WORDPRESS"
   }
 ]
