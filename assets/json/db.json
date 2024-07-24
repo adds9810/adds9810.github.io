@@ -1,15 +1,5 @@
 [
   {
-    "url": "https://www.hdksoe-sd.com/ko/main",
-    "linkTarget": "_blank",
-    "linkTit": "한국조선해양 SD사업부 사이트 새창 열기",
-    "imgSrc": "portfolio21.jpg",
-    "imgAlt": "한국조선해양 SD사업부",
-    "tit": "한국조선해양 SD사업부 리뉴얼 사이트",
-    "date": "2023. 11. ~ 2024. 1",
-    "lang": "HTML, SCSS, JS, JQUERY"
-  },
-  {
     "url": "https://play.google.com/store/apps/details?id=kr.co.cu.lifeapp",
     "linkTarget": "_blank",
     "linkTit": "신협중앙회 라이프 ON 앱 새창 열기",
@@ -28,6 +18,16 @@
     "tit": "클라렌 반응형 브랜드 사이트",
     "date": "2020. 1. ~ 5.",
     "lang": "HTML, SCSS, JAVASCRIPT, VUE.JS"
+  },
+  {
+    "url": "https://www.hdksoe-sd.com/ko/main",
+    "linkTarget": "_blank",
+    "linkTit": "한국조선해양 SD사업부 사이트 새창 열기",
+    "imgSrc": "portfolio21.jpg",
+    "imgAlt": "한국조선해양 SD사업부",
+    "tit": "한국조선해양 SD사업부 리뉴얼 사이트",
+    "date": "2023. 11. ~ 2024. 1",
+    "lang": "HTML, SCSS, JS, JQUERY"
   },
   {
     "url": "javascript:alert('현재 종료된 페이지 입니다.');",
