@@ -1,248 +1,281 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta property="og:title" content="프론트앤드 개발자 김지혜 포트폴리오" />
+    <meta
+      property="og:description"
+      content="사용자 친화적인 개발과 유지보수하기 좋은 코드를 지향하는 프론트앤드 개발자 김지혜의 포트폴리오 사이트"
+    />
+    <meta property="og:url" content="http://adds9810.github.io" />
+    <meta property="og:image" content="assets/img/bg/bg05.jpg" />
+    <meta content="프론트앤드 개발자 김지혜 포트폴리오" name="Title" />
+    <meta
+      content="사용자 친화적인 개발과 유지보수하기 좋은 코드를 지향하는 프론트앤드 개발자 김지혜의 포트폴리오 사이트"
+      name="Description"
+    />
+    <meta
+      content="프론트앤드 개발자, 프론트앤드 개발자 포트폴리오, 프론트앤드 개발자"
+      name="Keyword"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/script.js" defer type="text/javascript"></script>
+    <title>프론트앤드 개발자 김지혜 포트폴리오</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no, address=no, email=no" />
-  <meta property="og:title" content="프론트앤드 개발자 김지혜 포트폴리오" />
-  <meta property="og:description" content="사용자 친화적인 개발과 유지보수하기 좋은 코드를 지향하는 프론트앤드 개발자 김지혜의 포트폴리오 사이트" />
-  <meta property="og:url" content="http://adds9810.github.io" />
-  <meta property="og:image" content="assets/img/bg/bg05.jpg" />
-  <meta content="프론트앤드 개발자 김지혜 포트폴리오" name="Title" />
-  <meta content="사용자 친화적인 개발과 유지보수하기 좋은 코드를 지향하는 프론트앤드 개발자 김지혜의 포트폴리오 사이트" name="Description" />
-  <meta content="프론트앤드 개발자, 프론트앤드 개발자 포트폴리오, 프론트앤드 개발자" name="Keyword" />
-  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
-  <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-  <script src="assets/js/script.js" defer type="text/javascript"></script>
-  <title>프론트앤드 개발자 김지혜 포트폴리오</title>
-</head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="javascript:;" class="nav_btn">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#home" data-val="0" title="home으로 이동" class="on"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#about" data-val="1" title="ABOUT으로 이동">ABOUT</a>
+            </li>
+            <li><a href="#work" data-val="2" title="WORK으로 이동">WORK</a></li>
+            <li>
+              <a href="#contact" data-val="3" title="CONTACT으로 이동"
+                >CONTACT</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="nav_overlay"></div>
+      </header>
+      <div class="content_overlay"></div>
+      <div class="content_scroll">
+        <!-- homepage start // -->
+        <section class="content_box" id="home">
+          <div class="content_row">
+            <h1 class="logo"><a href="/" title="홈으로 이동">KIM JIHYE</a></h1>
+            <div class="content_col">
+              <div class="content_txt">
+                <p>
+                  사용자 친화적인 개발과 <br />유지보수하기 좋은 코드를 지향하는
+                </p>
+                <h2>프론트앤드 개발자 김지혜입니다.</h2>
+                <a
+                  href="javascript:;"
+                  class="btn round go_about"
+                  title="ABOUT 으로 이동"
+                >
+                  VIEW ABOUT ME
+                </a>
+              </div>
+            </div>
+            <footer>ⓒ KIM JIHYE, 2023(취업목적)</footer>
+          </div>
+        </section>
+        <!-- // homepage end -->
 
-<body>
-  <div class="wrapper">
-    <header>
-      <a href="javascript:;" class="nav_btn">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-      </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home" data-val="0" title="home으로 이동" class="on">HOME</a>
-          </li>
-          <li>
-            <a href="#about" data-val="1" title="ABOUT으로 이동">ABOUT</a>
-          </li>
-          <li><a href="#work" data-val="2" title="WORK으로 이동">WORK</a></li>
-          <li>
-            <a href="#contact" data-val="3" title="CONTACT으로 이동">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="nav_overlay"></div>
-    </header>
-    <div class="content_overlay"></div>
-    <div class="content_scroll">
-      <!-- homepage start // -->
-      <section class="content_box" id="home">
-        <div class="content_row">
-          <h1 class="logo"><a href="/" title="홈으로 이동">KIM JIHYE</a></h1>
-          <div class="content_col">
-            <div class="content_txt">
+        <!-- about start // -->
+        <section class="content_box" id="about">
+          <div class="content_row">
+            <div class="content_col">
+              <h2>ABOUT</h2>
               <p>
-                사용자 친화적인 개발과 <br />유지보수하기 좋은 코드를 지향하는
+                유저 경험과 디자인에 민감해 1px의 오차에 집중하며 새로운 기술과
+                트렌드를 익히고 도전하는 것을 좋아합니다. 커뮤니케이션의
+                중요성을 잘 알고 있으며, 어제보다 나은 사람이 되는 것을 목표로
+                하고 끊임없이 공부하고 적용하고자 노력하고 있습니다.<br />
+                프론트앤드 개발자로 5년간 근무하며 기업, 쇼핑몰, 공공기관 등의
+                다양한 사이트 제작 프로젝트를 디자인을 받아 개발자 혹은
+                다지이너와 의견을 나누고 조율하고 부족한 부분은 자기개발로
+                채우며 사용자 친화적인 웹으로 구현, 동작하는 일을 했습니다. 다른
+                누군가와 조율하며 부족한 것을 개인시간에 채우며 업무를 한다는
+                일은 쉬운 일이 아니었지만 사이트 완성을 목표로 차근히 밟아나가
+                완성을 했고, 같이 일한 동료들이 '같이 일하기 편한 사람'으로
+                평가받아 성취감과 뿌듯함으로 지금에 이르렀습니다.
+                <strong>
+                  이러한 경험들과 앞으로의 꾸준한 자기개발로 사용자 친화적
+                  개발과 유지보수 하기 좋은 코드를 지향하는 프론트앤드 개발자가
+                  되고자 합니다.
+                </strong>
               </p>
-              <h2>프론트앤드 개발자 김지혜입니다.</h2>
-              <a href="javascript:;" class="btn round go_about" title="ABOUT 으로 이동">
-                VIEW ABOUT ME
-              </a>
+              <div class="about_history">
+                <div class="about_val">
+                  <h3>career</h3>
+                  <ul class="history_list">
+                    <li>
+                      <strong>
+                        2018. 01. ~ 2019. 08. 유월커뮤니케이션 디자인팀 사원
+                      </strong>
+                      <ul>
+                        <li>
+                          기업, 쇼핑몰 등 반응형 웹사이트 퍼블리싱 및 유지보수
+                        </li>
+                        <li>
+                          그누보드 기반 사이트 사이트 퍼블리싱 및 유지보수
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong
+                        >2019. 12. ~ 2023. 03. 애드쿠아 인터렉티브 tech 본부
+                        매니저</strong
+                      >
+                      <ul>
+                        <li>
+                          반응형/적응형 기업, 이벤트 사이트 퍼블리싱 및 유지보수
+                        </li>
+                        <li>VUE.JS를 사용한 기업 사이트 퍼블리싱</li>
+                        <li>
+                          카페24, 고도몰 기반 쇼핑몰 사이트 퍼블리싱 및 유지보수
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong> 2023. 03. ~ 리플렉션 UXT 선임 </strong>
+                      <ul>
+                        <li>반응형 기업, 사이트 퍼블리싱</li>
+                        <li>VUE.JS를 사용한 앱 화면 퍼블리싱</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="about_val">
+                  <h3>EDUCATION</h3>
+                  <ul class="history_list">
+                    <li>
+                      <strong>2016. 10. ~ 2017. 03. 그린컴퓨터아카데미</strong>
+                      <span>
+                        스마트 기기 UX/UI과정 : PS, AI, HTML, CSS, JS, JQUERY
+                        이론교육 및 실습
+                      </span>
+                    </li>
+                    <li>
+                      <strong>2022. 07. ~ 2022. 10. 개발자의 품격</strong>
+                      <span>
+                        개발자 부트캠프 : HTML, CSS, JS, Vue.js, Node.js, MySQL,
+                        MongoDB 이론교육 및 실습
+                      </span>
+                    </li>
+                  </ul>
+                  <h3>SKILL</h3>
+                  <ul class="history_list">
+                    <li>
+                      <div>
+                        HTML, CSS, JS, Vue.js, Node.js, MySQL, MongoDB / PS, XD,
+                        Figma
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h3>what i do</h3>
+              <ul class="skill_list">
+                <li>
+                  <strong>Publishing</strong>
+                  HTML, CSS, SCSS, Javascript, Vue 등을 활용해 디자인과 모션,
+                  기능 등을 구현할 수 있습니다.
+                </li>
+                <li>
+                  <strong>Responsive</strong>
+                  적절한 시맨틱 태그 사용, 웹표준 및 웹접근성을 준수한 반응형
+                  레이아웃을 제작할 수 있습니다.
+                </li>
+                <li>
+                  <strong>Co-work</strong>
+                  원활한 협업을 위해 다양한 분야의 지식을 배우고 적용하며,
+                  디자이너, 개발자와 소통하려 노력합니다.
+                </li>
+              </ul>
             </div>
           </div>
-          <footer>ⓒ KIM JIHYE, 2023(취업목적)</footer>
-        </div>
-      </section>
-      <!-- // homepage end -->
+        </section>
+        <!-- // about end -->
 
-      <!-- about start // -->
-      <section class="content_box" id="about">
-        <div class="content_row">
-          <div class="content_col">
-            <h2>ABOUT</h2>
-            <p>
-              유저 경험과 디자인에 민감해 1px의 오차에 집중하며 새로운 기술과
-              트렌드를 익히고 도전하는 것을 좋아합니다. 커뮤니케이션의
-              중요성을 잘 알고 있으며, 어제보다 나은 사람이 되는 것을 목표로
-              하고 끊임없이 공부하고 적용하고자 노력하고 있습니다.<br />
-              프론트앤드 개발자로 5년간 근무하며 기업, 쇼핑몰, 공공기관 등의 다양한
-              사이트 제작 프로젝트를 디자인을 받아 개발자 혹은 다지이너와
-              의견을 나누고 조율하고 부족한 부분은 자기개발로 채우며 사용자
-              친화적인 웹으로 구현, 동작하는 일을 했습니다. 다른 누군가와
-              조율하며 부족한 것을 개인시간에 채우며 업무를 한다는 일은 쉬운
-              일이 아니었지만 사이트 완성을 목표로 차근히 밟아나가 완성을
-              했고, 같이 일한 동료들이 '같이 일하기 편한 사람'으로 평가받아
-              성취감과 뿌듯함으로 지금에 이르렀습니다.
-              <strong>
-                이러한 경험들과 앞으로의 꾸준한 자기개발로 사용자 친화적
-                개발과 유지보수 하기 좋은 코드를 지향하는 프론트앤드 개발자가 되고자
-                합니다.
-              </strong>
-            </p>
-            <div class="about_history">
-              <div class="about_val">
-                <h3>career</h3>
-                <ul class="history_list">
-                  <li>
-                    <strong>
-                      2018. 01. ~ 2019. 08. 유월커뮤니케이션 디자인팀 사원
-                    </strong>
-                    <ul>
-                      <li>
-                        기업, 쇼핑몰 등 반응형 웹사이트 퍼블리싱 및 유지보수
-                      </li>
-                      <li>
-                        그누보드 기반 사이트 사이트 퍼블리싱 및 유지보수
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>2019. 12. ~ 애드쿠아 인터렉티브 tech 본부 매니저</strong>
-                    <ul>
-                      <li>
-                        반응형/적응형 기업, 이벤트 사이트 퍼블리싱 및 유지보수
-                      </li>
-                      <li>VUE.JS를 사용한 기업 사이트 퍼블리싱</li>
-                      <li>
-                        카페24, 고도몰 기반 쇼핑몰 사이트 퍼블리싱 및 유지보수
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <strong>
-                      2023. 03. ~ 리플렉션 UXT 선임
-                    </strong>
-                    <ul>
-                      <li>반응형 기업, 사이트 퍼블리싱</li>
-                      <li>VUE.JS를 사용한 앱 화면 퍼블리싱</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="about_val">
-                <h3>EDUCATION</h3>
-                <ul class="history_list">
-                  <li>
-                    <strong>2016. 10. ~ 2017. 03. 그린컴퓨터아카데미</strong>
-                    <span>
-                      스마트 기기 UX/UI과정 : PS, AI, HTML, CSS, JS, JQUERY
-                      이론교육 및 실습
-                    </span>
-                  </li>
-                  <li>
-                    <strong>2022. 07. ~ 2022. 10. 개발자의 품격</strong>
-                    <span>
-                      개발자 부트캠프 : HTML, CSS, JS, Vue.js, Node.js, MySQL,
-                      MongoDB 이론교육 및 실습
-                    </span>
-                  </li>
-                </ul>
-                <h3>SKILL</h3>
-                <ul class="history_list">
-                  <li>
-                    <div>
-                      HTML, CSS, JS, Vue.js, Node.js, MySQL, MongoDB / PS, XD, Figma
-                    </div>
-                  </li>
-                </ul>
-              </div>
+        <!-- work start // -->
+        <section class="content_box" id="work">
+          <div class="content_row">
+            <div class="content_col">
+              <h2>WORKS</h2>
+              <p>근무기간 동안 작업한 사이트 입니다.</p>
+              <ul class="work_list" id="workList"></ul>
             </div>
-            <h3>what i do</h3>
-            <ul class="skill_list">
-              <li>
-                <strong>Publishing</strong>
-                HTML, CSS, SCSS, Javascript, Vue 등을 활용해 디자인과 모션,
-                기능 등을 구현할 수 있습니다.
-              </li>
-              <li>
-                <strong>Responsive</strong>
-                적절한 시맨틱 태그 사용, 웹표준 및 웹접근성을 준수한 반응형
-                레이아웃을 제작할 수 있습니다.
-              </li>
-              <li>
-                <strong>Co-work</strong>
-                원활한 협업을 위해 다양한 분야의 지식을 배우고 적용하며,
-                디자이너, 개발자와 소통하려 노력합니다.
-              </li>
-            </ul>
           </div>
-        </div>
-      </section>
-      <!-- // about end -->
+        </section>
+        <!-- // work end -->
 
-      <!-- work start // -->
-      <section class="content_box" id="work">
-        <div class="content_row">
-          <div class="content_col">
-            <h2>WORKS</h2>
-            <p>근무기간 동안 작업한 사이트 입니다.</p>
-            <ul class="work_list" id="workList"></ul>
+        <!-- contact start // -->
+        <section class="content_box" id="contact">
+          <div class="content_row">
+            <div class="content_col">
+              <h2>CONTACT</h2>
+              <p>
+                일처리가 신중하고 꼼꼼한 사람, 소통하며 일하는 사람, 목표가
+                주어지면 인내는 갖고 성실히 임하는 사람을 찾고 계신다면 연락
+                부탁드립니다.
+              </p>
+              <ul class="contact_list">
+                <li><strong>ADDRESS</strong> 서울특별시 은평구</li>
+                <li>
+                  <strong>PHONE</strong>
+                  <a href="tel:01067449820" title="전화걸기">010.6744.9820</a>
+                </li>
+                <li>
+                  <strong>E-MAIL</strong>
+                  <a href="mailto:toto7971@naver.com" title="메일보내기"
+                    >toto7971@naver.com</a
+                  >
+                </li>
+              </ul>
+              <h3>your message</h3>
+              <form
+                method="POST"
+                action="https://formspree.io/toto7971@naver.com"
+              >
+                <input type="text" placeholder="name" required />
+                <input type="email" name="email" placeholder="email" required />
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button type="submit" class="btn round">Send</button>
+              </form>
+            </div>
           </div>
+        </section>
+        <!-- // contact end -->
+      </div>
+      <div class="content_background">
+        <div class="cb_background" data-val="0">
+          <img src="assets/img/bg/bg01.jpg" alt="#home 배경 이미지" />
         </div>
-      </section>
-      <!-- // work end -->
-
-      <!-- contact start // -->
-      <section class="content_box" id="contact">
-        <div class="content_row">
-          <div class="content_col">
-            <h2>CONTACT</h2>
-            <p>
-              일처리가 신중하고 꼼꼼한 사람, 소통하며 일하는 사람, 목표가
-              주어지면 인내는 갖고 성실히 임하는 사람을 찾고 계신다면 연락
-              부탁드립니다.
-            </p>
-            <ul class="contact_list">
-              <li><strong>ADDRESS</strong> 서울특별시 은평구</li>
-              <li>
-                <strong>PHONE</strong>
-                <a href="tel:01067449820" title="전화걸기">010.6744.9820</a>
-              </li>
-              <li>
-                <strong>E-MAIL</strong>
-                <a href="mailto:toto7971@naver.com" title="메일보내기">toto7971@naver.com</a>
-              </li>
-            </ul>
-            <h3>your message</h3>
-            <form method="POST" action="https://formspree.io/toto7971@naver.com">
-              <input type="text" placeholder="name" required />
-              <input type="email" name="email" placeholder="email" required />
-              <textarea name="message" placeholder="Message" required></textarea>
-              <button type="submit" class="btn round">Send</button>
-            </form>
-          </div>
+        <div class="cb_background" data-val="1">
+          <img src="assets/img/bg/bg02.jpg" alt="#about 배경 이미지" />
         </div>
-      </section>
-      <!-- // contact end -->
-    </div>
-    <div class="content_background">
-      <div class="cb_background" data-val="0">
-        <img src="assets/img/bg/bg01.jpg" alt="#home 배경 이미지" />
-      </div>
-      <div class="cb_background" data-val="1">
-        <img src="assets/img/bg/bg02.jpg" alt="#about 배경 이미지" />
-      </div>
-      <div class="cb_background" data-val="2">
-        <img src="assets/img/bg/bg03.jpg" alt="#work 배경 이미지" />
-      </div>
-      <div class="cb_background" data-val="3">
-        <img src="assets/img/bg/bg04.jpg" alt="#contact 배경 이미지" />
+        <div class="cb_background" data-val="2">
+          <img src="assets/img/bg/bg03.jpg" alt="#work 배경 이미지" />
+        </div>
+        <div class="cb_background" data-val="3">
+          <img src="assets/img/bg/bg04.jpg" alt="#contact 배경 이미지" />
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
