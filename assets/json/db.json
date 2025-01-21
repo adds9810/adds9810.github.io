@@ -20,14 +20,24 @@
     "lang": "HTML, SCSS, JAVASCRIPT, VUE.JS"
   },
   {
+    "url": "https://www.lxhausys.co.kr/",
+    "linkTarget": "_blank",
+    "linkTit": "LX하우시스 사이트 새창 열기",
+    "imgSrc": "portfolio22.jpg",
+    "imgAlt": "LX하우시스",
+    "tit": "LX하우시스 홈페이지 구축",
+    "date": "2024. 4. ~ 8.",
+    "lang": "HTML, SCSS, JAVASCRIPT, JQUERY"
+  },
+  {
     "url": "https://www.hdksoe-sd.com/ko/main",
     "linkTarget": "_blank",
     "linkTit": "한국조선해양 SD사업부 사이트 새창 열기",
     "imgSrc": "portfolio21.jpg",
     "imgAlt": "한국조선해양 SD사업부",
-    "tit": "한국조선해양 SD사업부 리뉴얼 사이트",
-    "date": "2023. 11. ~ 2024. 1",
-    "lang": "HTML, SCSS, JS, JQUERY"
+    "tit": "한국조선해양 SD사업부 리뉴얼",
+    "date": "2023. 11. ~ 2024. 1.",
+    "lang": "HTML, SCSS, JAVASCRIPT, JQUERY"
   },
   {
     "url": "javascript:alert('현재 종료된 페이지 입니다.');",
