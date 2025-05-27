@@ -22,7 +22,7 @@ const projectData = [
     ],
   },
   {
-    title: "한국조선해양 SD사업부 홈페이지 구축",
+    title: "LX하우시스 홈페이지 구축",
     period: "2024.04. - 08.",
     description: "고도화된 UI/UX 기반 대기업 웹사이트 퍼블리싱 · 프로젝트 리딩",
     image: "./assets/images/portfolio22.jpg",
