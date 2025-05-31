@@ -1,5 +1,27 @@
 const projectData = [
   {
+    title: "성향 기반 타로 리딩 웹서비스",
+    period: "2025.05.",
+    description:
+      "MBTI 성향 테스트 기반 맞춤 타로 리딩 · 감성 UI · Supabase 기반 저장 기능 구현",
+    image: "./assets/images/portfolio24.png",
+    tags: ["Next.js", "Tailwind CSS", "Supabase", "Gemini API"],
+    buttons: [
+      {
+        type: "live",
+        label: "🔗 라이브",
+        style: "btn-primary",
+        url: "https://your-tarot-mbti.vercel.app/",
+      },
+      {
+        type: "code",
+        label: "📁 코드",
+        style: "btn-outline",
+        url: "https://github.com/adds9810/your-tarot-mbti",
+      },
+    ],
+  },
+  {
     title: "타로 다이어리 웹사이트 개발",
     period: "2025.04. - 05.",
     description:
@@ -21,21 +43,21 @@ const projectData = [
       },
     ],
   },
-  {
-    title: "LX하우시스 홈페이지 구축",
-    period: "2024.04. - 08.",
-    description: "고도화된 UI/UX 기반 대기업 웹사이트 퍼블리싱 · 프로젝트 리딩",
-    image: "./assets/images/portfolio22.jpg",
-    tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
-    buttons: [
-      {
-        type: "live",
-        label: "🔗 라이브",
-        style: "btn-primary",
-        url: "https://www.lxhausys.co.kr/",
-      },
-    ],
-  },
+  // {
+  //   title: "LX하우시스 홈페이지 구축",
+  //   period: "2024.04. - 08.",
+  //   description: "고도화된 UI/UX 기반 대기업 웹사이트 퍼블리싱 · 프로젝트 리딩",
+  //   image: "./assets/images/portfolio22.jpg",
+  //   tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
+  //   buttons: [
+  //     {
+  //       type: "live",
+  //       label: "🔗 라이브",
+  //       style: "btn-primary",
+  //       url: "https://www.lxhausys.co.kr/",
+  //     },
+  //   ],
+  // },
   {
     title: "한국조선해양 SD사업부 홈페이지 구축",
     period: "2023.11. - 2024.01.",
