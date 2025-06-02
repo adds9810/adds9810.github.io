@@ -10,12 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const card = document.createElement("div");
     card.className = "project-card";
 
-    card.innerHTML = `
+    card.innerHTML =
+      `
     <img src="${project.image}" alt="${project.title}" class="project-image" />
     <div class="project-content">
       <h3 class="project-title">${project.title}</h3>
       <h3 class="project-period">${project.period}</h3>
-      <p class="project-description">${project.description}</p>
+      <p class="project-description">` +
+      (project.contribution === 100
+        ? `<strong>기여도 ${project.contribution}%</strong> `
+        : `기여도 ${project.contribution}% `) +
+      ` · ${project.description}</p>
       <div class="project-tags">
         ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
       </div>
@@ -169,8 +174,8 @@ function typeWriter() {
   if (prefersReducedMotion) return;
 
   const texts = [
-    "웹 퍼블리셔",
     "프론트엔드 개발자",
+    "웹 퍼블리셔",
     "UI/UX 전문가",
     "웹 접근성 전문가",
   ];
