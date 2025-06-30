@@ -212,25 +212,6 @@ function typeWriter() {
   type();
 }
 
-// Enhanced Skills Animation
-function animateSkills() {
-  const skillItems = document.querySelectorAll(".skill-item");
-
-  skillItems.forEach((item, index) => {
-    setTimeout(() => {
-      item.classList.add("animate");
-
-      const progressBar = item.querySelector(".skill-progress");
-      const width = item.getAttribute("data-width");
-
-      setTimeout(() => {
-        progressBar.style.width = width + "%";
-        progressBar.classList.add("animate");
-      }, 200);
-    }, index * 100);
-  });
-}
-
 // Loading Screen Management
 const loadingScreen = document.getElementById("loadingScreen");
 const mainContent = document.getElementById("mainContent");
@@ -381,18 +362,41 @@ const observerOptions = {
 };
 
 const observer = new IntersectionObserver((entries) => {
+  console.log(entries);
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
-
-      if (entry.target.id === "skills") {
-        setTimeout(() => {
-          animateSkills();
-        }, 300);
-      }
     }
   });
 }, observerOptions);
+// 개별 .skill-category 요소에 애니메이션 클래스 부여
+const skillObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate");
+        // 관찰 중지하고 싶으면 아래 줄 활성화
+        // skillObserver.unobserve(entry.target);
+        const skillItems = entry.target.querySelectorAll(".skill-item");
+
+        skillItems.forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.add("animate");
+          }, index * 100);
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.3,
+    rootMargin: "0px 0px -50px 0px",
+  }
+);
+
+// 모든 .skill-category에 observer 연결
+document.querySelectorAll(".skill-category").forEach((el) => {
+  skillObserver.observe(el);
+});
 
 const sections = document.querySelectorAll(".section");
 sections.forEach((section) => {
