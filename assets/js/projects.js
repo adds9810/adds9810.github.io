@@ -4,7 +4,7 @@ const projectData = [
     period: "2025.05.",
     contribution: 100,
     description:
-      "MBTI 기반 질문·카드 선택 → 맞춤형 타로 조언 제공 & 후기 저장 기능 구현",
+      "사용자 MBTI·카드·질문을 조합한 Gemini API 리딩 구현 · html2canvas 결과 이미지 저장 · Supabase DB 연동 · GA4 유입 추적",
     image: "./assets/images/portfolio24.png",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Gemini API"],
     buttons: [
@@ -27,7 +27,7 @@ const projectData = [
     period: "2025.04. - 05.",
     contribution: 100,
     description:
-      "사용자 맞춤 타로 기록 및 통계 기능 구현 · 감성 UI 및 인증 기반 로그인 연동",
+      "Next.js 14 App Router 기반 · Supabase Auth 인증 및 Storage 이미지 업로드 · OpenAI API 리딩 연동 · Framer Motion 페이지 전환 애니메이션 적용",
     image: "./assets/images/portfolio23.png",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "OpenAI API"],
     buttons: [
@@ -48,7 +48,7 @@ const projectData = [
   // {
   //   title: "LX하우시스 홈페이지 구축",
   //   period: "2024.04. - 08.",
-  //   description: "고도화된 UI/UX 기반 대기업 웹사이트 퍼블리싱 · 프로젝트 리딩",
+  //   description: "대기업 홈페이지 전체 퍼블리싱 리드 · 고도화된 UI/UX 기반 반응형 구현 · 프로젝트 일정 및 산출물 관리",
   //   image: "./assets/images/portfolio22.jpg",
   //   tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
   //   buttons: [
@@ -65,7 +65,7 @@ const projectData = [
     period: "2023.11. - 2024.01.",
     contribution: 50,
     description:
-      "글로벌 대응 다국어 웹사이트 구축 · 구조 설계 및 퍼블리싱 리드",
+      "글로벌 다국어(한/영) 반응형 웹사이트 구축 · 퍼블리싱 구조 설계 및 리드",
     image: "./assets/images/portfolio21.jpg",
     tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
     buttons: [
@@ -81,7 +81,7 @@ const projectData = [
     title: "신협중앙회 라이프 ON 앱",
     period: "2024.04. - 10.",
     contribution: 50,
-    description: "VUE 기반 앱·웹 접근성 화면 구현 및 UI 컴포넌트 가이드 제작",
+    description: "Vue.js 기반 금융 앱 웹뷰 UI 구현 · 웹 접근성 대응 및 컴포넌트 가이드 제작",
     image: "./assets/images/portfolio20.jpg",
     tags: ["HTML", "SCSS", "JAVASCRIPT", "VUE.JS", "VUETIFY"],
     buttons: [
@@ -97,7 +97,7 @@ const projectData = [
     title: "이스턴웰스 브랜드 사이트 리뉴얼",
     period: "2020.10. - 2021.01.",
     contribution: 70,
-    description: "서브 페이지 퍼블리싱 & 네이버 지도 API 연동 기능 구현",
+    description: "서브 페이지 퍼블리싱 · 네이버 지도 API 연동 구현",
     image: "./assets/images/portfolio14.jpg",
     tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
     buttons: [
@@ -113,7 +113,7 @@ const projectData = [
     title: "클라렌 브렌드 사이트 리뉴얼",
     period: "2020.01. - 05.",
     contribution: 60,
-    description: "Vue.js + SCSS 기반 서브 페이지 퍼블리싱 및 컴포넌트 구현",
+    description: "Vue.js + SCSS 기반 컴포넌트 구현 · 서브 페이지 퍼블리싱",
     image: "./assets/images/portfolio13.jpg",
     tags: ["HTML", "SCSS", "JAVASCRIPT", "VUE.JS"],
     buttons: [
