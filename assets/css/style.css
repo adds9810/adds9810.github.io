@@ -916,6 +916,9 @@ grid-template-columns: 1fr 400px;
 }
 
 /* Contact Section */
+#contact .btn{
+  margin-top: 1rem;
+}
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
