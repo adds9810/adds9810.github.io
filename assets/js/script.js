@@ -176,7 +176,7 @@ function typeWriter() {
   const texts = [
     "프론트엔드 개발자",
     "웹 퍼블리셔",
-    "UI/UX 전문가",
+    "UI 개발자",
     "웹 접근성 전문가",
   ];
   let textIndex = 0;
