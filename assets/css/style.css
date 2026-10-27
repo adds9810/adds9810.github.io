@@ -55,9 +55,27 @@ body {
   color: var(--foreground);
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
-  opacity: 0;
   cursor: none;
   overflow-x: hidden;
+}
+/* Skip Link */
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 9999;
+  padding: 10px 16px;
+
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+
+  transform: translateY(-150%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 /* Scroll Progress Bar */
@@ -1300,7 +1318,7 @@ grid-template-columns: 1fr 400px;
   html {
     scroll-behavior: auto;
   }
-  
+
   body {
     opacity: 1 !important;
     cursor: auto !important;

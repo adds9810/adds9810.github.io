@@ -4,7 +4,7 @@ const projectData = [
     period: "2025.05.",
     contribution: 100,
     description:
-      "사용자 MBTI·카드·질문을 조합한 Gemini API 리딩 구현 · html2canvas 결과 이미지 저장 · Supabase DB 연동 · GA4 유입 추적",
+      "MBTI 성향과 사용자 질문을 기반으로 Gemini API 리딩을 제공하고, 결과 이미지 저장 · 후기 DB 연동 · GA4 이벤트 추적 기능을 구현한 개인 프로젝트",
     image: "./assets/images/portfolio24.png",
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Gemini API"],
     buttons: [
@@ -23,13 +23,13 @@ const projectData = [
     ],
   },
   {
-    title: "타로 다이어리 웹사이트 개발",
+    title: "타로 다이어리 웹앱 개발",
     period: "2025.04. - 05.",
     contribution: 100,
     description:
-      "Next.js 14 App Router 기반 · Supabase Auth 인증 및 Storage 이미지 업로드 · OpenAI API 리딩 연동 · Framer Motion 페이지 전환 애니메이션 적용",
+      "타로 기록 CRUD와 AI 카드 리딩을 제공하는 웹앱으로, Supabase 인증·DB·Storage와 OpenAI API를 연동하고 Framer Motion 인터랙션을 구현한 개인 프로젝트",
     image: "./assets/images/portfolio23.png",
-    tags: ["Next.js", "Tailwind CSS", "Supabase", "OpenAI API"],
+    tags: ["Next.js", "TypeScript", "Supabase", "OpenAI API"],
     buttons: [
       {
         type: "live",
@@ -49,9 +49,10 @@ const projectData = [
     title: "LX하우시스 홈페이지 구축",
     period: "2024.04. - 08.",
     contribution: 50,
-    description: "대기업 홈페이지 전체 퍼블리싱 리드 · 고도화된 UI/UX 기반 반응형 구현 · 프로젝트 일정 및 산출물 관리",
+    description:
+      "반응형 홈페이지 구축 프로젝트에서 퍼블리싱을 리드하고, SCSS 기반 스타일 가이드와 공통 UI 구조를 정리하며 일정·산출물 관리를 담당",
     image: "./assets/images/portfolio22.jpg",
-    tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
+    tags: ["HTML", "SCSS", "JavaScript", "jQuery"],
     buttons: [
       {
         type: "live",
@@ -66,25 +67,26 @@ const projectData = [
     period: "2023.11. - 2024.01.",
     contribution: 50,
     description:
-      "글로벌 다국어(한/영) 반응형 웹사이트 구축 · 퍼블리싱 구조 설계 및 리드",
+      "국문·영문 다국어 반응형 웹사이트의 퍼블리싱 구조를 설계하고 작업을 리드했으며, SCSS 기반 스타일 가이드와 인터랙션을 구현",
     image: "./assets/images/portfolio21.jpg",
-    tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
+    tags: ["HTML", "SCSS", "JavaScript", "jQuery"],
     buttons: [
-      {
-        type: "live",
-        label: "🔗 라이브",
-        style: "btn-primary",
-        url: "https://www.hdksoe-sd.com/ko/main",
-      },
+      // {
+      //   type: "live",
+      //   label: "🔗 라이브",
+      //   style: "btn-primary",
+      //   url: "https://www.hdksoe-sd.com/ko/main",
+      // },
     ],
   },
   {
     title: "신협중앙회 라이프 ON 앱",
     period: "2024.04. - 10.",
     contribution: 50,
-    description: "Vue.js 기반 금융 앱 웹뷰 UI 구현 · 웹 접근성 대응 및 컴포넌트 가이드 제작",
+    description:
+      "Vue.js·Vuetify 기반 금융 앱 웹뷰 UI를 구현하고, 웹 접근성 대응과 공통 컴포넌트 스타일 가이드 제작에 참여",
     image: "./assets/images/portfolio20.jpg",
-    tags: ["HTML", "SCSS", "JAVASCRIPT", "VUE.JS", "VUETIFY"],
+    tags: ["HTML", "SCSS", "JavaScript", "Vue.js", "Vuetify"],
     buttons: [
       {
         type: "detail",
@@ -98,9 +100,10 @@ const projectData = [
     title: "이스턴웰스 브랜드 사이트 리뉴얼",
     period: "2020.10. - 2021.01.",
     contribution: 70,
-    description: "서브 페이지 퍼블리싱 · 네이버 지도 API 연동 구현",
+    description:
+      "반응형 서브 페이지를 구현하고, 백엔드 데이터를 활용한 네이버 지도 API 연동으로 지점 위치 시각화 기능을 개발",
     image: "./assets/images/portfolio14.jpg",
-    tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],
+    tags: ["HTML", "SCSS", "JavaScript", "jQuery"],
     buttons: [
       {
         type: "live",
@@ -111,12 +114,13 @@ const projectData = [
     ],
   },
   {
-    title: "클라렌 브렌드 사이트 리뉴얼",
+    title: "클라렌 브랜드 사이트 리뉴얼",
     period: "2020.01. - 05.",
     contribution: 60,
-    description: "Vue.js + SCSS 기반 컴포넌트 구현 · 서브 페이지 퍼블리싱",
+    description:
+      "Vue.js와 SCSS 기반으로 반응형 UI를 구현하고, 반복 요소를 컴포넌트 단위로 구성해 재사용성과 유지보수성을 높임",
     image: "./assets/images/portfolio13.jpg",
-    tags: ["HTML", "SCSS", "JAVASCRIPT", "VUE.JS"],
+    tags: ["HTML", "SCSS", "JavaScript", "Vue.js"],
     buttons: [
       {
         type: "live",
