@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".grid.grid-3");
 
   projectData.forEach((project) => {
+    const contributionText =
+      typeof project.contribution === "number"
+        ? project.contribution === 100
+          ? `<strong>기여도 ${project.contribution}%</strong> · `
+          : `기여도 ${project.contribution}% · `
+        : "";
     const card = document.createElement("div");
     card.className = "project-card";
 
@@ -15,12 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     <img src="${project.image}" alt="${project.title}" class="project-image" />
     <div class="project-content">
       <h3 class="project-title">${project.title}</h3>
-      <h3 class="project-period">${project.period}</h3>
-      <p class="project-description">` +
-      (project.contribution === 100
-        ? `<strong>기여도 ${project.contribution}%</strong> `
-        : `기여도 ${project.contribution}% `) +
-      ` · ${project.description}</p>
+      <p class="project-period">${project.period}</p>
+      <p class="project-description">${contributionText}${project.description}</p>
       <div class="project-tags">
         ${project.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
       </div>
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ${project.buttons
           .map(
             (btn) => `
-            <a href="${btn.url}" class="btn ${btn.style}" target="_blank">${btn.label}</a>
+            <a href="${btn.url}" class="btn ${btn.style}" target="_blank" rel="noopener noreferrer">${btn.label}</a>
           `
           )
           .join("")}
@@ -38,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     container.appendChild(card);
   });
+
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
 });
 
 // Scroll Progress Bar and Scroll to Top Button
@@ -107,7 +111,7 @@ function updateScrollSpy() {
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth",
+    behavior: prefersReducedMotion ? "auto" : "smooth"
   });
 }
 
@@ -237,7 +241,7 @@ function updateLoadingMessage() {
 
 function simulateLoading() {
   const interval = setInterval(() => {
-    loadingProgress += Math.random() * 15 + 5;
+    loadingProgress += Math.random() * 15 + 0.5;
     updateLoadingMessage();
 
     if (loadingProgress >= 100) {
@@ -289,6 +293,10 @@ const body = document.body;
 const currentTheme = localStorage.getItem("theme") || "light";
 body.setAttribute("data-theme", currentTheme);
 themeIcon.textContent = currentTheme === "dark" ? "☀️" : "🌙";
+themeToggle.setAttribute(
+  "aria-pressed",
+  String(currentTheme === "dark")
+);
 
 themeToggle.addEventListener("click", () => {
   const currentTheme = body.getAttribute("data-theme");
@@ -297,23 +305,40 @@ themeToggle.addEventListener("click", () => {
   body.setAttribute("data-theme", newTheme);
   localStorage.setItem("theme", newTheme);
   themeIcon.textContent = newTheme === "dark" ? "☀️" : "🌙";
+  themeToggle.setAttribute(
+    "aria-pressed",
+    String(newTheme === "dark")
+  );
+  themeToggle.setAttribute(
+    "aria-label",
+    newTheme === "dark"
+      ? "라이트 모드로 전환"
+      : "다크 모드로 전환"
+  );
 });
 
 // Mobile Menu Toggle
-const mobileMenuToggle = document.getElementById("mobileMenuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
+function setMobileMenu(open) {
+  mobileMenu.classList.toggle("active", open);
+
+  mobileMenuToggle.setAttribute("aria-expanded", String(open));
+  mobileMenuToggle.setAttribute(
+    "aria-label",
+    open ? "메뉴 닫기" : "메뉴 열기"
+  );
+}
 
 mobileMenuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
+  const isOpen = mobileMenu.classList.contains("active");
+  setMobileMenu(!isOpen);
 });
 
 const mobileMenuLinks = mobileMenu.querySelectorAll("a");
 mobileMenuLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
+    setMobileMenu(false);
   });
 });
-
 // Close mobile menu when clicking outside
 document.addEventListener("click", (e) => {
   const isClickInsideMenu = mobileMenu.contains(e.target);
@@ -324,21 +349,8 @@ document.addEventListener("click", (e) => {
     !isClickOnToggle &&
     mobileMenu.classList.contains("active")
   ) {
-    mobileMenu.classList.remove("active");
-  }
-});
-
-// Close mobile menu on touch outside (for mobile devices)
-document.addEventListener("touchstart", (e) => {
-  const isClickInsideMenu = mobileMenu.contains(e.target);
-  const isClickOnToggle = mobileMenuToggle.contains(e.target);
-
-  if (
-    !isClickInsideMenu &&
-    !isClickOnToggle &&
-    mobileMenu.classList.contains("active")
-  ) {
-    mobileMenu.classList.remove("active");
+    setMobileMenu(false);
+    mobileMenuToggle.focus();
   }
 });
 
@@ -362,7 +374,6 @@ const observerOptions = {
 };
 
 const observer = new IntersectionObserver((entries) => {
-  console.log(entries);
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("visible");
@@ -417,7 +428,7 @@ navLinks.forEach((link) => {
 
       window.scrollTo({
         top: targetPosition,
-        behavior: "smooth",
+        behavior: prefersReducedMotion ? "auto" : "smooth",
       });
     }
   });
@@ -444,7 +455,8 @@ if (!prefersReducedMotion) {
 // Keyboard navigation support
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    mobileMenu.classList.remove("active");
+    setMobileMenu(false);
+    mobileMenuToggle.focus();
   }
 });
 

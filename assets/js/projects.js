@@ -48,6 +48,7 @@ const projectData = [
   {
     title: "LX하우시스 홈페이지 구축",
     period: "2024.04. - 08.",
+    contribution: 50,
     description: "대기업 홈페이지 전체 퍼블리싱 리드 · 고도화된 UI/UX 기반 반응형 구현 · 프로젝트 일정 및 산출물 관리",
     image: "./assets/images/portfolio22.jpg",
     tags: ["HTML", "SCSS", "JAVASCRIPT", "JQUERY"],

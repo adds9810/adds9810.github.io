@@ -37,9 +37,14 @@
 
 /* Focus styles */
 *:focus {
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
+  outline: none;
 }
+
+*:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -1292,6 +1297,10 @@ grid-template-columns: 1fr 400px;
     display: none !important;
   }
 
+  html {
+    scroll-behavior: auto;
+  }
+  
   body {
     opacity: 1 !important;
     cursor: auto !important;
