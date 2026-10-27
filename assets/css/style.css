@@ -183,20 +183,20 @@ body {
 }
 
 .spinner-ring:nth-child(2) {
-  width: 60px;
-  height: 60px;
-  top: 10px;
-  left: 10px;
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
   border-top-color: var(--primary-dark);
   animation-duration: 1.5s;
   animation-direction: reverse;
 }
 
 .spinner-ring:nth-child(3) {
-  width: 40px;
-  height: 40px;
-  top: 20px;
-  left: 20px;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
   border-top-color: var(--primary);
   animation-duration: 2s;
 }

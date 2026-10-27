@@ -251,11 +251,21 @@ function simulateLoading() {
   }, 200);
 }
 
+let isLoadingFinished = false;
+let maxLoadingTime;
+
 function finishLoading() {
-  document.querySelector(".loading-text").textContent = "완료!";
-  loadingStatus.textContent = "페이지 로딩이 완료되었습니다";
+  if (isLoadingFinished) return;
+  isLoadingFinished = true;
+  clearTimeout(maxLoadingTime);
+
+  const loadingText = document.querySelector(".loading-text");
+  if (loadingText) loadingText.textContent = "완료!";
+  if (loadingStatus) loadingStatus.textContent = "페이지 로딩이 완료되었습니다";
 
   setTimeout(() => {
+    if (!loadingScreen) return;
+
     loadingScreen.classList.add("hidden");
     document.body.style.opacity = "1";
     mainContent.classList.add("loaded");
@@ -281,7 +291,7 @@ if (prefersReducedMotion) {
   simulateLoading();
 }
 
-const maxLoadingTime = setTimeout(() => {
+maxLoadingTime = setTimeout(() => {
   finishLoading();
 }, 5000);
 
